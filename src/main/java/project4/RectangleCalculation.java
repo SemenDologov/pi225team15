@@ -2,15 +2,15 @@ package project4;
 
 public class RectangleCalculation extends calculation {
 
-	private int length;
-	private int width;
+	private Integer length;
+	private Integer width;
 
-	public RectangleCalculation(int length, int width) {
+	public RectangleCalculation(Integer length, Integer width) {
 		this.length = length;
 		this.width = width;
 	}
 	
-	public int Calc() {
+	public Integer Calc() {
 		return(length + width)*2;
 	}
 	

@@ -2,24 +2,24 @@ package project4;
 
 public abstract class calculation {
 
-	   private int length;
-	   private int width;
+	   private Integer length;
+	   private Integer width;
 
-	   abstract public int Calc();
+	   abstract public Integer Calc();
 
-	   public int getLength() {
+	   public Integer getLength() {
 	       return length;
 	   }
 
-	   public void setLength(int length) {
+	   public void setLength(Integer length) {
 	       this.length = length;
 	   }
 
-	   public int getWidth() {
+	   public Integer getWidth() {
 	       return width;
 	   }
 
-	   public void setWidth(int width) {
+	   public void setWidth(Integer width) {
 	       this.width = width;
 	   }
 }

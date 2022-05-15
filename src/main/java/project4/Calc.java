@@ -43,7 +43,7 @@ public class Calc extends HttpServlet {
 	private static class RequestCalc{
 		private final String first_calc;
 		private final String second_calc;
-		private int result;
+		private Integer result;
 		private RequestCalc (String first, String second) {
 			this.first_calc = first;
 			this.second_calc = second;
@@ -57,8 +57,8 @@ public class Calc extends HttpServlet {
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
 			request.setAttribute("first_result", first_calc);
 			request.setAttribute("second_result", second_calc);
-			int first_try;
-			int second_try;
+			Integer first_try;
+			Integer second_try;
 			try {
 				first_try=Integer.parseInt(first_calc);
 				second_try=Integer.parseInt(second_calc);
