@@ -5,7 +5,7 @@ public abstract class calculation {
 	   private int length;
 	   private int width;
 
-	   public abstract void Calc();
+	   abstract public int Calc();
 
 	   public int getLength() {
 	       return length;

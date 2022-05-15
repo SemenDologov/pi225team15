@@ -67,7 +67,7 @@ public class Calc extends HttpServlet {
 				first_try = 0;
 				second_try = 0;
 			}
-			RectangleCalculation Rectangle = new RectangleCalculation(first_calc, second_calc);
+			RectangleCalculation Rectangle = new RectangleCalculation(Integer.parseInt(first_calc), Integer.parseInt(second_calc));
 			request.setAttribute("result",Rectangle.Calc());
 		}
 	}
